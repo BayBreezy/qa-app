@@ -23,7 +23,7 @@
 		</PopoverButton>
 		<transition name="popover">
 			<PopoverPanel
-				class="absolute z-10 p-4 bg-white border shadow-xl dark:border-gray-700 dark:bg-slate-900 dark:text-gray-50 w-96 rounded-xl"
+				class="absolute z-10 p-4 bg-white border shadow-xl dark:border-gray-800 dark:bg-slate-900 dark:text-gray-50 w-96 rounded-xl"
 			>
 				<div class="flex items-center space-x-3">
 					<div
