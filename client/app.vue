@@ -1,5 +1,6 @@
 <template>
-	<div class="bg-white text-gray-800 dark:bg-dark dark:text-gray-100">
+	<div class="text-gray-800 bg-white dark:bg-dark dark:text-gray-100">
 		<NuxtPage />
+		<NavMobile />
 	</div>
 </template>

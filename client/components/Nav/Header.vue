@@ -1,21 +1,21 @@
 <template>
 	<header
-		class="sticky top-0 bg-white/80 dark:bg-dark/60 backdrop-blur border-b border-gray-100 dark:border-gray-800/50"
+		class="sticky top-0 border-b border-gray-100 bg-white/80 dark:bg-dark/60 backdrop-blur dark:border-gray-800/50"
 	>
-		<div class="max-w-7xl mx-auto lg:h-24 h-16 flex items-center justify-between px-4">
+		<div class="flex items-center justify-between h-16 px-4 mx-auto max-w-7xl lg:h-24">
 			<div class="flex items-center space-x-10">
 				<NuxtLink to="/" class="text-xl font-medium">
 					<span>QA App </span>
 				</NuxtLink>
 				<button
 					@click="$refs.searchPanel.openModal()"
-					class="btn-flat text-gray-400 space-x-3 pr-10 hidden lg:inline-block"
+					class="hidden pr-10 space-x-3 text-gray-400 btn-flat lg:inline-block"
 				>
 					<Icon name="fluent:search-24-regular" size="18" />
 					<span> Search question or answer... </span>
 				</button>
 			</div>
-			<div class="lg:flex items-center hidden">
+			<div class="items-center hidden lg:flex">
 				<nav class="flex items-center space-x-1">
 					<NuxtLink
 						v-tooltip="`Go to home page`"
@@ -28,14 +28,14 @@
 				<button
 					@click="$refs.createAccount.openModal()"
 					v-tooltip="`Creat an account`"
-					class="btn ml-5"
+					class="ml-5 btn"
 				>
 					Account
 				</button>
-				<div class="border-l dark:border-gray-800 ml-7 pl-5">
+				<div class="pl-5 border-l dark:border-gray-800 ml-7">
 					<button
 						@click="toggleDark()"
-						class="text-gray-500 hover:text-primary dark:hover:text-primary py-1 px-2"
+						class="px-2 py-1 text-gray-500 hover:text-primary dark:hover:text-primary"
 					>
 						<Icon
 							:name="isDark ? 'fluent:weather-sunny-24-regular' : 'fluent:weather-moon-24-regular'"

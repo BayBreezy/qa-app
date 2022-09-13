@@ -4,9 +4,9 @@
 			<Dialog as="div" @close="closeModal" class="relative z-10">
 				<TransitionChild
 					as="div"
-					enter="duration-300 transition-all"
-					leave="duration-300 transition-all"
+					enter="ease-in-out duration-500"
 					enter-from="opacity-0"
+					leave="ease-in-out duration-500"
 					leave-to="opacity-0"
 				>
 					<!-- Overlay -->
@@ -16,7 +16,7 @@
 				<!-- Scrollable container -->
 				<div class="fixed inset-0 overflow-y-auto">
 					<!-- Modal body container- used to position the box -->
-					<div class="flex min-h-full items-center justify-center p-4">
+					<div class="flex items-center justify-center min-h-full p-4">
 						<TransitionChild
 							as="template"
 							enter="duration-300"
@@ -25,7 +25,7 @@
 							leave-to="opacity-0 scale-75"
 						>
 							<DialogPanel
-								class="w-full p-8 max-w-md overflow-hidden rounded-2xl bg-white dark:bg-gray-900 shadow-xl transition-all"
+								class="w-full max-w-md p-8 overflow-hidden transition-all bg-white shadow-xl rounded-2xl dark:bg-gray-900"
 							>
 								<DialogTitle
 									as="h3"
@@ -33,7 +33,7 @@
 								>
 									Create Account
 								</DialogTitle>
-								<DialogDescription class="mt-4 mb-7 text-sm text-gray-400"
+								<DialogDescription class="mt-4 text-sm text-gray-400 mb-7"
 									>Create an account to post questions & answers</DialogDescription
 								>
 								<div class="mt-2">
@@ -62,9 +62,9 @@
 									</button>
 								</div>
 
-								<div class="mt-4 flex justify-end items-center space-x-3">
-									<button type="button" class="btn-flat py-3" @click="closeModal">Cancel</button>
-									<button type="button" class="btn py-3" @click="closeModal">Create account</button>
+								<div class="flex items-center justify-end mt-4 space-x-3">
+									<button type="button" class="py-3 btn-flat" @click="closeModal">Cancel</button>
+									<button type="button" class="py-3 btn" @click="closeModal">Create account</button>
 								</div>
 							</DialogPanel>
 						</TransitionChild>
