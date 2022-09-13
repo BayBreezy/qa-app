@@ -24,6 +24,13 @@
 					>
 						<span>Home</span>
 					</NuxtLink>
+					<button
+						v-tooltip="`Sign into your account`"
+						@click="$refs.signIn.openModal()"
+						class="text-sm font-medium px-4 py-2.5 text-gray-500 dark:text-gray-300 hover:text-primary dark:hover:text-primary"
+					>
+						<span>Sign In</span>
+					</button>
 				</nav>
 				<button
 					@click="$refs.createAccount.openModal()"
@@ -48,6 +55,8 @@
 		<CreateAccount ref="createAccount" />
 		<!-- search panel modal -->
 		<SearchPanel ref="searchPanel" />
+		<!-- Sign in modal -->
+		<SignIn ref="signIn" />
 	</header>
 </template>
 

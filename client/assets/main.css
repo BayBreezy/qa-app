@@ -27,8 +27,20 @@ html {
 /* Tooltip */
 
 .v-popper__wrapper {
-	@apply bg-dark/10 text-xs rounded-lg;
+	@apply text-xs rounded-lg bg-dark/10;
 }
 .dark .v-popper__wrapper {
-	@apply bg-white/70 text-xs rounded-lg;
+	@apply text-xs rounded-lg bg-white/70;
+}
+
+/* Transitions */
+.popover-enter-active,
+.popover-leave-active {
+	transition: all 0.2s ease-in;
+}
+
+.popover-enter-from,
+.popover-leave-to {
+	opacity: 0;
+	transform: translateY(-10px);
 }

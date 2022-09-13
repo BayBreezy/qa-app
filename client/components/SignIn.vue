@@ -31,10 +31,10 @@
 									as="h3"
 									class="text-xl font-medium leading-6 text-gray-900 dark:text-gray-50"
 								>
-									Create Account
+									Sign In
 								</DialogTitle>
 								<DialogDescription class="mt-4 text-sm text-gray-400 mb-7"
-									>Create an account to post questions & answers</DialogDescription
+									>Sign into your account to manage questions & answers</DialogDescription
 								>
 								<div class="mt-2">
 									<form>
@@ -61,7 +61,7 @@
 
 								<div class="flex items-center justify-end mt-4 space-x-3">
 									<button type="button" class="py-3 btn-flat" @click="closeModal">Cancel</button>
-									<button type="button" class="py-3 btn" @click="closeModal">Create account</button>
+									<button type="button" class="py-3 btn" @click="closeModal">Sign In</button>
 								</div>
 							</DialogPanel>
 						</TransitionChild>

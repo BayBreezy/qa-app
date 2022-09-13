@@ -4,9 +4,12 @@ import { defineNuxtConfig } from "nuxt";
 export default defineNuxtConfig({
 	modules: ["@nuxtjs/tailwindcss", "@vueuse/nuxt", "nuxt-icon", "floating-vue/nuxt"],
 	build: {
-		transpile: ["@headlessui/vue"],
+		transpile: ["@headlessui/vue", "@headlessui/tailwindcss"],
 	},
 	tailwindcss: {
 		cssPath: "~/assets/main.css",
+	},
+	meta: {
+		title: "QA App",
 	},
 });
