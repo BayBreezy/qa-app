@@ -8,7 +8,7 @@
 			<Icon size="28" name="heroicons:bars-3-bottom-right-solid" />
 		</button>
 		<TransitionRoot as="template" :show="showMenu">
-			<Dialog as="div" class="z-10" @close="showMenu = false">
+			<Dialog as="div" class="z-30" @close="showMenu = false">
 				<TransitionChild
 					as="template"
 					enter="ease-in-out duration-500"
@@ -20,7 +20,7 @@
 				</TransitionChild>
 
 				<!-- Scrolable container -->
-				<div class="fixed inset-0 overflow-y-auto">
+				<div class="fixed inset-0 z-30 overflow-y-auto">
 					<!-- Modal body container- used to position the content -->
 					<div class="flex justify-start min-h-full pr-5">
 						<TransitionChild

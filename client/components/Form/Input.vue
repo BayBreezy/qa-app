@@ -1,15 +1,15 @@
 <template>
-	<div class="w-full">
+	<div class="z-0 w-full">
 		<label
 			v-if="label"
 			:for="id"
-			class="font-medium text-sm block mb-1 text-gray-600 dark:text-gray-300"
+			class="block mb-1 text-sm font-medium text-gray-600 dark:text-gray-300"
 			>{{ label }}</label
 		>
 		<div
-			class="flex items-center relative border border-gray-400 hover:border-gray-500 dark:border-gray-600 dark:hover:border-gray-500 dark:focus-within:hover:border-primary/50 dark:focus-within:border-primary/40 dark:bg-gray-900 focus-within:hover:border-primary/30 focus-within:border-primary/40 focus-within:ring-4 transition-all focus-within:ring-primary/20 rounded-lg overflow-clip"
+			class="relative flex items-center transition-all border border-gray-400 rounded-lg hover:border-gray-500 dark:border-gray-800 dark:hover:border-gray-500 dark:focus-within:hover:border-primary/50 dark:focus-within:border-primary/40 dark:bg-gray-900 focus-within:hover:border-primary/30 focus-within:border-primary/40 focus-within:ring-4 focus-within:ring-primary/20 overflow-clip"
 		>
-			<span v-if="startIcon" class="absolute left-3 top-1/2 -translate-y-1/2">
+			<span v-if="startIcon" class="absolute -translate-y-1/2 left-3 top-1/2">
 				<Icon :name="startIcon" size="23" class="text-gray-500" />
 			</span>
 			<input
@@ -22,11 +22,11 @@
 				v-model="value"
 				:id="id"
 			/>
-			<span v-if="endIcon" class="absolute right-3 top-1/2 -translate-y-1/2">
+			<span v-if="endIcon" class="absolute -translate-y-1/2 right-3 top-1/2">
 				<Icon :name="endIcon" size="23" class="text-gray-500" />
 			</span>
 		</div>
-		<div class="text-xs text-red-500 mt-1">
+		<div class="mt-1 text-xs text-red-500">
 			<span class="text-transparent select-none">.</span><span>{{ errorMessage }}</span>
 		</div>
 	</div>
